@@ -88,7 +88,7 @@ form.addEventListener("submit",(e)=>{
     document.querySelector(".movies").innerHTML = ""
     e.preventDefault()
     let searchValue = searchInput.value
-    moviesSearch(searchValue,"s")
+    moviesSearch(searchValue.trim(),"s")
     console.log(searchValue )
 })
 
